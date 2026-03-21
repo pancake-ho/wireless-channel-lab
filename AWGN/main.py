@@ -1,8 +1,9 @@
 from visualization import plot_constellation
 from qpsk_trasmission import run_qpsk_transmission
+from simulate_awgn import simulate_awgn, demo_simulate_awgn
 
 def main():
-   run_qpsk_transmission()
+   demo_simulate_awgn()
 
 
 if __name__ == "__main__":
