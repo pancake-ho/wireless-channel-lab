@@ -11,7 +11,7 @@ def plot_constellations():
     qam64 = QAM(64)
     qam256 = QAM(256)
 
-    fig_bpsk, ax_bpsk = plt.subplot(figsize=(4, 4))
+    fig_bpsk, ax_bpsk = plt.subplots(figsize=(4, 4))
     ax_bpsk.set_title("BPSK")
     ax_bpsk.plot(bpsk.symbols.real, bpsk.symbols.imag, "*r")
     ax_bpsk.axis("equal")
