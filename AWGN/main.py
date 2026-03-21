@@ -60,6 +60,14 @@ def run_awgn_simulator2_demo():
 
 
 def main():
+    """
+    1. 매 실행마다 무작위 symbol을 만들고 QPSK로 변조
+    2. Noise만 있는 채널을 통과시킴
+    3. 다시 복조해서 원래 데이터와 비교
+    
+    - 이때 성능 비교는 BER이 아닌 SER(Symbol Error Rate)
+
+    """
     print("[1] Plotting constellations...")
     plot_constellation()
 
