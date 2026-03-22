@@ -64,9 +64,9 @@ def main():
     1. 매 실행마다 무작위 symbol을 만들고 QPSK로 변조
     2. Noise만 있는 채널을 통과시킴
     3. 다시 복조해서 원래 데이터와 비교
-    
-    - 이때 성능 비교는 BER이 아닌 SER(Symbol Error Rate)
 
+    - 성능 비교는 BER이 아닌 SER(Symbol Error Rate)
+    - 채널은 가장 단순한 AWGN 채널 사용 (신호에 가우시안 잡음이 그냥 더해지는 채널)
     """
     print("[1] Plotting constellations...")
     plot_constellation()
